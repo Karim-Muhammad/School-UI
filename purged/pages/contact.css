@@ -1,0 +1,176 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     Fonts                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Container                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* Colors Theme */
+
+.bg-primary {
+  background-color: #6c63ff;
+}
+
+.bg-primary-2 {
+  background-color: #2e3267;
+}
+
+.text-ternary {
+  color: #ff9b00;
+}
+
+.text-info {
+  color: #63ff6c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-light {
+  color: #a1a1a1;
+}
+
+/* Font Theme */
+.font-xs {
+  font-size: 0.9rem;
+}
+
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.3rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-xl {
+  font-size: 2.4rem;
+}
+
+.font-xxl {
+  font-size: 3.6rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact {
+  padding: 13rem 0 0;
+}
+section.contact .container {
+  align-items: center;
+}
+section.contact .container .left {
+  flex: 1;
+}
+section.contact .container .left .wrapper {
+  padding: 30px;
+  margin: 50px 0;
+  background-color: #6c63ff;
+  border-radius: 2rem;
+  transform: scaleY(1.2);
+  position: relative;
+  top: 0;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.249);
+}
+section.contact .container .left .wrapper img {
+  width: 50%;
+}
+section.contact .container .left .wrapper p {
+  margin: 1rem 0;
+}
+section.contact .container .left .wrapper .info {
+  line-height: 2;
+  margin: 2rem 0;
+}
+section.contact .container .left .wrapper .info i {
+  margin-right: 10px;
+}
+@media (max-width: 380px) {
+  section.contact .container .left .wrapper .info {
+    text-align: center;
+  }
+}
+section.contact .container .left .wrapper .social * {
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.249);
+  padding: 10px;
+}
+section.contact .container .right {
+  padding: 50px;
+  flex: 2;
+}
+section.contact .container .right input:not(:last-child),
+section.contact .container .right textarea {
+  display: inline-block;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, 0.249);
+  color: #fff;
+}
+section.contact .container .right input:not(:last-child)#fName, section.contact .container .right input:not(:last-child)#lName,
+section.contact .container .right textarea#fName,
+section.contact .container .right textarea#lName {
+  width: 47.5%;
+}
+section.contact .container .right input:not(:last-child)#fName:first-child, section.contact .container .right input:not(:last-child)#lName:first-child,
+section.contact .container .right textarea#fName:first-child,
+section.contact .container .right textarea#lName:first-child {
+  margin-right: 4%;
+}
+@media (max-width: 500px) {
+  section.contact .container .right input {
+    width: 100% !important;
+  }
+}
+section.contact .container .right input:focus,
+section.contact .container .right textarea:focus {
+  outline: none;
+  border: none;
+}
+section.contact .container .right input#email,
+section.contact .container .right textarea {
+  margin: 1rem 0;
+  width: 100%;
+}
+@media (max-width: 1076px) {
+  section.contact .container {
+    flex-direction: column;
+  }
+  section.contact .container .left {
+    transform: scaleY(1);
+    width: 70%;
+    position: unset;
+    top: 0;
+    bottom: 40px;
+  }
+}

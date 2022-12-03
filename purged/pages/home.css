@@ -1,0 +1,543 @@
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     Fonts                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Container                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     Fonts                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Container                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* Colors Theme */
+
+.bg-primary {
+  background-color: #6c63ff;
+}
+
+.bg-primary-2 {
+  background-color: #2e3267;
+}
+
+.text-ternary {
+  color: #ff9b00;
+}
+
+.text-info {
+  color: #63ff6c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-light {
+  color: #a1a1a1;
+}
+
+/* Font Theme */
+.font-xs {
+  font-size: 0.9rem;
+}
+
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.3rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-xl {
+  font-size: 2.4rem;
+}
+
+.font-xxl {
+  font-size: 3.6rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                 Components                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                               Header Section                               */
+/* -------------------------------------------------------------------------- */
+header {
+  padding: 6rem 0;
+}
+
+.header__container, .category {
+  height: calc(100vh - 100px);
+}
+.header__container > *, .category > * {
+  flex: 1;
+}
+@media (max-width: 820px) {
+  .header__container, .category {
+    flex-direction: column;
+  }
+}
+.header__container .p-left, .category .p-left {
+  color: #fff;
+}
+.header__container .p-left .text, .category .p-left .text {
+  width: 80%;
+}
+.header__container .p-left p, .category .p-left p {
+  margin: 20px 0;
+  color: #a1a1a1;
+}
+.header__container .p-left a, .category .p-left a {
+  display: block;
+  width: fit-content;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 Categories                                 */
+/* -------------------------------------------------------------------------- */
+.category {
+  height: 100%;
+}
+.category .container {
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  .category .container {
+    flex-direction: column;
+  }
+}
+.category .p-left {
+  flex: 1;
+}
+@media (max-width: 910px) {
+  .category .p-left .text {
+    width: 100%;
+  }
+}
+.category .p-right {
+  flex: 1;
+}
+.category .p-right .row {
+  flex-wrap: wrap;
+  height: 40%;
+}
+.category .p-right .blocks article.block {
+  flex: 1;
+  margin: 7px;
+  border-radius: 0.9rem;
+  padding: 20px;
+  background-color: #424890;
+  transition: 0.4s ease;
+}
+.category .p-right .blocks article.block span.icon {
+  width: fit-content;
+  font-size: 2rem;
+}
+.category .p-right .blocks article.block p {
+  color: #a1a1a1;
+}
+.category .p-right .blocks article.block h5 {
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+.category .p-right .blocks article.block:hover {
+  box-shadow: inset 0px 1px 2px 3px rgba(58, 56, 56, 0.5);
+  background-color: #525898;
+}
+.category .p-right .blocks:nth-child(1) .block:nth-child(1) span.icon {
+  background-color: #0064ff;
+  padding: 7px;
+  border-radius: 3px;
+}
+.category .p-right .blocks:nth-child(1) .block:nth-child(2) span.icon {
+  background-color: #ff9b00;
+  padding: 7px;
+  border-radius: 3px;
+}
+.category .p-right .blocks:nth-child(1) .block:nth-child(3) span.icon {
+  background-color: #ff6c63;
+  padding: 7px;
+  border-radius: 3px;
+}
+.category .p-right .blocks:nth-child(2) .block:nth-child(1) span.icon {
+  background-color: #9c97fc;
+  padding: 7px;
+  border-radius: 3px;
+}
+.category .p-right .blocks:nth-child(2) .block:nth-child(2) span.icon {
+  background-color: #6c63ff;
+  padding: 7px;
+  border-radius: 3px;
+}
+.category .p-right .blocks:nth-child(2) .block:nth-child(3) span.icon {
+  background-color: #ff9b00;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Courses                                  */
+/* -------------------------------------------------------------------------- */
+section.courses .wrapper {
+  gap: 40px;
+  flex-wrap: wrap;
+}
+section.courses .wrapper article.course {
+  transition: 0.3s ease;
+  background-color: #2e3267;
+  border: 1px solid transparent;
+  flex: 1;
+}
+section.courses .wrapper article.course img {
+  width: 100%;
+  transition: 0.2s;
+}
+section.courses .wrapper article.course img:hover {
+  transform: scale(1.2);
+}
+section.courses .wrapper article.course .text {
+  padding: 20px 10px;
+  text-align: center;
+}
+section.courses .wrapper article.course .text p {
+  margin: 10px 0;
+}
+section.courses .wrapper article.course .text a.btn {
+  margin: 10px 0;
+}
+section.courses .wrapper article.course:hover {
+  background-color: transparent;
+  border-color: #2e3267;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Question                                  */
+/* -------------------------------------------------------------------------- */
+section.faqs {
+  background-color: #2e3267;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.4);
+}
+section.faqs .wrapper {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 410px) {
+  section.faqs .wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+section.faqs .wrapper .faq {
+  cursor: pointer;
+  padding: 20px 25px;
+  background-color: #424890;
+}
+section.faqs .wrapper .faq .answer {
+  display: none;
+  padding: 20px 25px;
+  color: #e6e6e6;
+}
+section.faqs .wrapper .faq.active .answer {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Testimonials                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     Fonts                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Container                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* Colors Theme */
+
+.bg-primary {
+  background-color: #6c63ff;
+}
+
+.bg-primary-2 {
+  background-color: #2e3267;
+}
+
+.text-ternary {
+  color: #ff9b00;
+}
+
+.text-info {
+  color: #63ff6c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-light {
+  color: #a1a1a1;
+}
+
+/* Font Theme */
+.font-xs {
+  font-size: 0.9rem;
+}
+
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.3rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-xl {
+  font-size: 2.4rem;
+}
+
+.font-xxl {
+  font-size: 3.6rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.testmonials {
+  position: relative;
+}
+.testmonials .container {
+  overflow-x: hidden;
+}
+.testmonials .container .slide {
+  max-width: 100% !important;
+  cursor: pointer;
+  user-select: none;
+}
+.testmonials .container .slide * {
+  display: block;
+}
+.testmonials .container .slide img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 3rem auto;
+  border: 1rem solid #2e3267;
+}
+.testmonials .container .slide .info {
+  z-index: 3;
+  background-color: #424890;
+  position: relative;
+}
+.testmonials .container .slide .info::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-image: linear-gradient(135deg, transparent, #424890, #424890, #424890);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -1.5rem;
+  z-index: -1;
+}
+.testmonials .container .slide img ~ * {
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Colors                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     Fonts                                  */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Container                                */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   Layout                                   */
+/* -------------------------------------------------------------------------- */
+/* Colors Theme */
+
+.bg-primary {
+  background-color: #6c63ff;
+}
+
+.bg-primary-2 {
+  background-color: #2e3267;
+}
+
+.text-ternary {
+  color: #ff9b00;
+}
+
+.text-info {
+  color: #63ff6c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-light {
+  color: #a1a1a1;
+}
+
+/* Font Theme */
+.font-xs {
+  font-size: 0.9rem;
+}
+
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.3rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-xl {
+  font-size: 2.4rem;
+}
+
+.font-xxl {
+  font-size: 3.6rem;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 6rem 0;
+  background-color: #2e3267;
+  box-shadow: inset 3px 3px rgba(0, 0, 0, 0.4);
+}
+footer .container.row {
+  flex-wrap: wrap;
+}
+footer .container.row div.col {
+  word-wrap: break-word;
+  padding: 20px;
+  flex: 1;
+  flex-shrink: 0;
+}
+footer .container.row div.col h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+footer .container.row div.col p,
+footer .container.row div.col ul,
+footer .container.row div.col span {
+  color: #d4d4d4;
+  line-height: 2;
+  display: block;
+}
+@media (max-width: 920px) {
+  footer .container.row div.col {
+    flex: 50%;
+  }
+}
+@media (max-width: 500px) {
+  footer .container.row div.col {
+    flex: 100%;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Media Query (Tablets)                           */
+/* -------------------------------------------------------------------------- */

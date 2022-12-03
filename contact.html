@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="purged/style.css" />
+    <link rel="stylesheet" href="purged/pages/contact.css" />
+  </head>
+  <body>
+    <nav class="text-white active">
+      <div
+        class="container nav__container display-flex justify-between align-center"
+      >
+        <a href="index.html" class="logo text-ternary"><h4>Karim</h4></a>
+        <ul class="display-flex">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="courses.html">courses</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="open-menu-btn">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <!-- <button class="close-menu-btn">
+          <span class="material-symbols-outlined"> close </span>
+        </button> -->
+      </div>
+    </nav>
+
+    <section class="contact">
+      <div
+        class="container display-flex text-white justify-between bg-primary-2"
+      >
+        <div class="left">
+          <div class="wrapper">
+            <img src="images/contact.svg" alt="" />
+            <h3 class="font-xl">Contact Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              ab tempora hic perferendis consequatur quo id odit quia corporis
+              architecto, laborum laboriosam, amet ducimus non sequi
+              consequuntur repellat ratione! Ab.
+            </p>
+
+            <div class="info">
+              <p>
+                <i class="fa-solid fa-phone"></i>
+                <span>+276238176192</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                <span>support@gmail.com</span>
+              </p>
+              <p>
+                <i class="fa-solid fa-globe"></i>
+                <span>Accra, Ghana</span>
+              </p>
+              <!-- Social Icons -->
+              <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="post">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="first name"
+              id="fName"
+            />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="last name"
+              id="lName"
+            />
+            <input type="email" name="email" id="email" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <input class="btn btn-danger" type="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
