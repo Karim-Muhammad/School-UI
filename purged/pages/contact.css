@@ -168,9 +168,14 @@ section.contact .container .right textarea {
   }
   section.contact .container .left {
     transform: scaleY(1);
-    width: 70%;
     position: unset;
     top: 0;
     bottom: 40px;
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  section.contact .container .left {
+    width: 100%;
   }
 }
